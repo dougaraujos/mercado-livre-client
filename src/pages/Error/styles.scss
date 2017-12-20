@@ -1,0 +1,32 @@
+/*====================================*\
+	#ERROR 404
+\*====================================*/
+
+@import '~stylesheets/variables/colors';
+@import '~stylesheets/variables/properties';
+
+
+.content{
+	width: 100%;
+    padding: 3rem 2rem;
+	text-align: center;
+}
+
+.title{
+	margin: 0;
+	font-size: 3rem;
+
+	&.isBig{
+		font-size: 7rem;
+		line-height: 5rem;
+	}
+}
+
+.link{
+	display: inline-block;
+	margin-top: 2rem;
+	padding: 1rem;
+	background: $secondaryColor;
+	color: $white;
+	border-radius: $borderRadius;
+}

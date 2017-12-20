@@ -52,7 +52,7 @@ class Search extends Component {
 				items,
 				isLoading: false
 			})
-		})
+		}).catch(() => this.props.history.push('/500'))
 	}
 
 	render(){
