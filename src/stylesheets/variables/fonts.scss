@@ -1,0 +1,22 @@
+/*====================================*\
+	#FONTS
+\*====================================*/
+
+@import "~stylesheets/variables/colors";
+
+
+$fontFamily: 'Proxima Nova', sans-serif;
+
+$fontWeightThin: 100;
+$fontWeightLight: 300;
+$fontWeightNormal: 400;
+$fontWeightMedium: 500;
+$fontWeightBold: 700;
+
+$fontWeight: $fontWeightNormal;
+
+$fontSize: 100%;
+$lineHeight: 150%;
+
+$fontColor: $black;
+$fontColorNegative: $white;
