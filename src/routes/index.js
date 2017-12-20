@@ -5,7 +5,7 @@
 import Home from 'pages/Home';
 import Product from 'pages/Product';
 import Search from 'pages/Search';
-import Error404 from 'pages/Error404';
+import Error from 'pages/Error';
 
 
 const routes = [
@@ -26,7 +26,7 @@ const routes = [
 	},
 	{
 		path: '*',
-		component: Error404
+		component: Error
 	}
 ];
 
