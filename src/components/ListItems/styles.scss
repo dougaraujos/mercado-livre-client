@@ -1,0 +1,99 @@
+/*====================================*\
+	#LIST ITEMS
+\*====================================*/
+
+@import '~stylesheets/variables/colors';
+@import '~stylesheets/variables/fonts';
+@import '~stylesheets/variables/properties';
+@import '~stylesheets/variables/utils';
+
+.item{
+	position: relative;
+	background: $white;
+	border-radius: $borderRadius;
+
+	&:after{
+		content: '';
+		position: absolute;
+		left: 5%;
+		bottom: 0;
+		height: 1px;
+		width: 90%;
+		border-bottom: 1px solid $grayLight;
+	}
+
+	&:last-child{
+		&:after{
+			display: none;
+		}
+	}
+}
+
+.link{
+	display: flex;
+	align-items: center;
+	padding: 2rem;
+	color: $gray;
+
+	#{$pEvents}{
+		color: $black;
+	}
+
+	@include tablet {
+		display: block;
+
+		> img{
+			display: block;
+			margin: 0 auto 1rem;
+		}
+	}
+}
+
+.info{
+	padding: 1rem;
+	flex: 2;
+
+	@include tablet {
+		padding: 0;
+	}
+
+	.price{
+		font-size: 1.5rem;
+	}
+
+	.title{
+		font-size: 1.2rem;
+		font-weight: $fontWeightLight;
+	}
+}
+
+
+.condition{
+	padding: 1rem;
+	flex: 1;
+	text-align: right;
+	text-transform: capitalize;
+
+	@include tablet {
+		padding: 0;
+	}
+}
+
+
+/*------------------------------------*\
+	#EMPTY STATE
+\*------------------------------------*/
+
+.emptyState{
+	padding: 2rem;
+
+	> .title{
+		margin: 0;
+		color: $orange;
+	}
+
+	> .text{
+		margin-top: 1.5rem;
+		line-height: 1.5rem;
+	}
+}
