@@ -1,0 +1,63 @@
+@import '~stylesheets/variables/colors';
+@import '~stylesheets/variables/fonts';
+@import '~stylesheets/variables/properties';
+
+
+.product{
+	padding: 2rem;
+}
+
+.details{
+	display: flex;
+}
+	.picture{
+		flex: 3;
+		padding-right: 3rem;
+
+		> img{
+			width: 100%;
+		}
+	}
+
+	.price{
+		font-size: 2.5rem;
+		font-weight: $fontWeightLight;
+
+		> .amount {
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		> .decimals {
+			display: inline-block;
+			vertical-align: top;
+			font-size: 1.2rem;
+			line-height: 2rem;
+		}
+	}
+
+	.info{
+		flex: 2;
+	}
+
+	.buy{
+		margin-top: 3rem;
+		padding: 1rem 0.5rem;
+		width: 100%;
+		background: $secondaryColor;
+		border: none;
+		font-size: 1.2rem;
+		color: $white;
+		border-radius: $borderRadius;
+		cursor: pointer;
+	}
+
+.description{
+	> .title{
+		font-size: 1.5rem;
+	}
+
+	> .text{
+		line-height: 1.5rem;
+	}
+}

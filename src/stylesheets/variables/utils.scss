@@ -1,0 +1,24 @@
+/*====================================*\
+	#UTILS
+\*====================================*/
+
+$pHover: '&:hover';
+$pFocus: '&:focus';
+$pActive: '&:active';
+$pEvents: "#{$pHover}, #{$pFocus}, #{$pActive}";
+
+
+$tabletWidth: 768px;
+$desktopWidth: 1024px;
+
+@mixin tablet {
+	@media screen and (max-width: #{$tabletWidth}){
+		@content;
+	}
+}
+
+@mixin desktop{
+	@media screen and (max-width: #{$desktopWidth}){
+		@content;
+	}
+}
